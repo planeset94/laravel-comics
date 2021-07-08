@@ -80,12 +80,17 @@
         </div>
     </main>
     <footer id="site_footer">
-        <div class="container">
-            @yield('footer')
-            <section class="top-footer">
-                <div class="link-conteiner">
-                    <div class="link-group">
-                        <h3 class="UPPER-CASE">DC COMICS</h3>
+
+        @yield('footer')
+        <section class="top-footer">
+            <div class="container">
+                <div class="big-logo">
+                    <img src="{{ asset('img/dc-logo-bg.png') }}" alt="Big logo DC">
+
+                </div>
+                <div class="link-container">
+                    <div class="group">
+                        <h4 class="UPPER-CASE">DC COMICS</h4>
                         <a href="{{ route('characters') }}">Characters</a>
 
                         <a href="{{ route('comics') }}">Comics</a>
@@ -98,8 +103,8 @@
                         <a href="{{ route('news') }}">News</a>
                         <a href="{{ route('shop') }}">Shop</a>
                     </div>
-                    <div class="link-group">
-                        <h3 class="UPPER-CASE">DC</h3>
+                    <div class="group">
+                        <h4 class="UPPER-CASE">DC</h4>
                         <a href="#">Term Of Use</a>
                         <a href="#">Privacy policy (New)</a>
                         <a href="#">ad Choices</a>
@@ -112,32 +117,33 @@
                         <a href="#">Shop Help</a>
                         <a href="#">Contact Us</a>
                     </div>
-                    <div class="link-group">
-                        <h3>SITES</h3>
+                    <div class="group">
+                        <h4>SITES</h4>
                         <a href="#">DC</a>
                         <a href="#">MAD Magazine</a>
                         <a href="#">DC Kids</a>
                         <a href="#">DC Universe</a>
                         <a href="#">DC Power Visa</a>
                     </div>
-                    <div class="link-group">
-                        <h3 class="UPPER-CASE">SHOP</h3>
+                    <div class="group">
+                        <h4 class="UPPER-CASE">SHOP</h4>
                         <a href="#">Shop DC</a>
                         <a href="#">Shop DC Collectibles</a>
                     </div>
-
-
+                    <span class="copyright">
+                        <p>All Site Content TM and @ 2020 DV Entertainment, unless otherwise <a href="#">noted here.</a>
+                            All
+                            rights
+                            reserved.</p>
+                        <p><a href="#">Cokies Settings</a></p>
+                    </span>
                 </div>
 
-                <p>All Site Content TM and @ 2020 DV Entertainment, unless otherwise <a href="#">noted here.</a> All
-                    rights
-                    reserved.</p>
-                <p><a href="#">Cokies Settings</a></p>
-        </div>
+            </div>
         </section>
 
 
-        <section class="bottom-footer">
+        {{-- <section class="bottom-footer">
             <div class="container">
                 <div class="sign">
                     <h3 class="UPPER-CASE">Sign-Up Now!</h3>
@@ -153,7 +159,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
     </footer>

@@ -106,3 +106,63 @@ nav.menu .container .search input {
   background-color: #0282F9;
 }
 
+#site_footer {
+  color: white;
+}
+
+.top-footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+}
+
+.top-footer .container {
+  position: relative;
+}
+
+.top-footer .container .big-logo {
+  height: 400px;
+  position: absolute;
+  right: 0;
+}
+
+.top-footer .container .big-logo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-footer .container .link-container {
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+}
+
+.top-footer .container .link-container .group {
+  width: calc(100%/3 - 1rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.top-footer .container .link-container .group h4 {
+  color: white;
+  padding-bottom: 0.8rem;
+}
+
+.top-footer .container .link-container .group a {
+  text-decoration: none;
+  color: #959595;
+  font-size: 0.8rem;
+}
+
+.top-footer .container .link-container .copyright {
+  color: #959595;
+  font-size: 0.8rem;
+  padding-top: 2rem;
+}
+
+.top-footer .container .link-container .copyright a {
+  text-decoration: none;
+  color: #0282F9;
+}
+
