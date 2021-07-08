@@ -27,36 +27,43 @@
 // NAV BAR 
 
 nav.menu {
+
+    
     & .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 1rem 0;
-
-
-            .logo {
-                height: 75px;
-                img{
-                    height: 100%;
-                    object-fit: contain;
-                }
+        
+        
+        .logo {
+            height: 75px;
+            img{
+                height: 100%;
+                object-fit: contain;
             }
-
-            .pages{
-                padding:0 1rem;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    padding-right: 0.5rem;
+        }
+        
+        .pages{
+            padding:0 1rem;
+            text-align: center;
+            a{
+                position: relative;
+                text-decoration: none;
+                padding: 0 0.5rem;
                     padding-top: 5px;
                     color: $main-font-color;
                 }
             }
 
             .search{
+                border-bottom: 2px solid $header-color;
+                width: 120px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
                 input{
                     border: 0;
-                    border-bottom: 2px solid $header-color;
                     text-align: right;
                     padding-bottom: 0.2rem;
                 }
@@ -64,4 +71,21 @@ nav.menu {
 
 
     }
+}
+
+// BOTTOM PART / jumbotron
+
+.jumbotron{
+
+    background-image: url('../../../public/img/jumbotron.jpg');
+    height: 400px;
+    background-position: top;
+
+
+
+
+
+
+
+
 }

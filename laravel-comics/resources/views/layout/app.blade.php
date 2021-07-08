@@ -36,33 +36,34 @@
                 </div>
                 <div class="pages">
                     <a href="{{ route('characters') }}"
-                        class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}">Characters</a>
+                        id="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}">Characters</a>
                     <a href="{{ route('comics') }}"
-                        class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">Comics</a>
+                        id="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">Comics</a>
                     <a href="{{ route('movies') }}"
-                        class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}">Movies</a>
+                        id="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}">Movies</a>
                     <a href="{{ route('tv') }}"
-                        class="{{ Route::currentRouteName() === 'tv' ? 'active' : '' }}">Tv</a>
+                        id="{{ Route::currentRouteName() === 'tv' ? 'active' : '' }}">Tv</a>
                     <a href="{{ route('games') }}"
-                        class="{{ Route::currentRouteName() === 'games' ? 'active' : '' }}">Games</a>
+                        id="{{ Route::currentRouteName() === 'games' ? 'active' : '' }}">Games</a>
                     <a href="{{ route('collectibles') }}"
-                        class="{{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }}">Collectibles</a>
+                        id="{{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }}">Collectibles</a>
                     <a href="{{ route('videos') }}"
-                        class="{{ Route::currentRouteName() === 'videos' ? 'active' : '' }}">Videos</a>
+                        id="{{ Route::currentRouteName() === 'videos' ? 'active' : '' }}">Videos</a>
                     <a href="{{ route('fans') }}"
-                        class="{{ Route::currentRouteName() === 'fans' ? 'active' : '' }}">Fans</a>
+                        id="{{ Route::currentRouteName() === 'fans' ? 'active' : '' }}">Fans</a>
                     <a href="{{ route('news') }}"
-                        class="{{ Route::currentRouteName() === 'news' ? 'active' : '' }}">News</a>
+                        id="{{ Route::currentRouteName() === 'news' ? 'active' : '' }}">News</a>
                     <a href="{{ route('shop') }}"
-                        class="{{ Route::currentRouteName() === 'shop' ? 'active' : '' }}">Shop</a>
+                        id="{{ Route::currentRouteName() === 'shop' ? 'active' : '' }}">Shop</a>
                 </div>
                 <div class="search">
-                    <input type="search" name="search" id="search" placeholder="Search">
+                    <input type="search" name="search" id="search" placeholder="Search ">
+                    <label for="search"><i class="fas fa-search"></i></label>
 
                 </div>
             </div>
         </nav>
-        <div class="heade-bottom">
+        <div class="jumbotron">
             <div class="container">
                 <div class="current-series"></div>
             </div>
@@ -84,6 +85,7 @@
                     <div class="link-group">
                         <h3 class="UPPER-CASE">DC COMICS</h3>
                         <a href="{{ route('characters') }}">Characters</a>
+
                         <a href="{{ route('comics') }}">Comics</a>
                         <a href="{{ route('movies') }}">Movies</a>
                         <a href="{{ route('tv') }}">Tv</a>

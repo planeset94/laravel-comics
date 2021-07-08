@@ -12,3 +12,17 @@
 .UPPER-CASE{
     text-transform: uppercase;
 }
+#active{
+    color: $header-color;
+    &::before{
+        display: inline-block;
+        content: "";
+        width: 80%;
+        height: 4px;
+        background-color: #0282F9;
+        position: absolute;
+        bottom: -200%;
+    }
+   
+
+}
