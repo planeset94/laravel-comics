@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.UPPER-CASE {
+  text-transform: uppercase;
+}
+
 .header-top {
   background: #0282F9;
 }
@@ -17,7 +21,6 @@
   display: flex;
   justify-content: flex-end;
   color: white;
-  text-transform: uppercase;
   font-size: 0.6rem;
   padding: 5px 0;
 }
@@ -28,5 +31,41 @@
 
 .header-top .container p:last-of-type i {
   padding-left: 5px;
+}
+
+nav.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+nav.menu .container .logo {
+  height: 75px;
+}
+
+nav.menu .container .logo img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+nav.menu .container .pages {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+nav.menu .container .pages a {
+  text-decoration: none;
+  padding-right: 0.5rem;
+  padding-top: 5px;
+  color: #6F4646;
+}
+
+nav.menu .container .search input {
+  border: 0;
+  border-bottom: 2px solid #0282F9;
+  text-align: right;
+  padding-bottom: 0.2rem;
 }
 
