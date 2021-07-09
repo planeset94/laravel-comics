@@ -79,15 +79,14 @@
             @yield('content')
         </div>
     </main>
+
+    {{-- SITE FOOTER --}}
     <footer id="site_footer">
 
         @yield('footer')
+        {{-- TOP FOOTER --}}
         <section class="top-footer">
             <div class="container">
-                <div class="big-logo">
-                    <img src="{{ asset('img/dc-logo-bg.png') }}" alt="Big logo DC">
-
-                </div>
                 <div class="link-container">
                     <div class="group">
                         <h4 class="UPPER-CASE">DC COMICS</h4>
@@ -139,6 +138,11 @@
                     </span>
                 </div>
 
+                <div class="big-logo">
+                    <img src="{{ asset('img/dc-logo-bg.png') }}" alt="Big logo DC">
+
+                </div>
+
             </div>
         </section>
 
@@ -163,7 +167,7 @@
 
 
     </footer>
-
+    {{-- /SITE FOOTER --}}
 </body>
 
 </html>

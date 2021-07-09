@@ -4,75 +4,69 @@
   
  
 
-}
-
-
-.top-footer{
-  
-    background-image: url('../../../public/img/footer-bg.jpg');
+    .top-footer{
     
-    .container{
-        position: relative;
-
-    .big-logo{
-        height: 400px;
-        position: absolute;
-        right: 0;
+        background-image: url('../../../public/img/footer-bg.jpg');
         
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-        
-    }
-    .link-container{
-        display: flex;
-        width: 40%;
-        flex-wrap: wrap;
-        padding: 4rem 0;
-
-    
-
-        .group{
-            width: calc(100%/3 - 1rem);
+        .container{
+            // position: relative;
             display: flex;
-            flex-direction: column;
+          
 
-            h4{
-                color:white;
-                padding-bottom: 0.8rem;
+            .big-logo{
+                width: 60%;
+                height: 400px;
+               
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                
             }
-            a{
-                text-decoration: none;
-                color: #959595;
-                font-size: 0.8rem;
+            .link-container{
+                display: flex;
+                width: 40%;
+                flex-wrap: wrap;
+               
+
+            
+
+                .group{
+                    width: calc(100%/3 - 1rem);
+                    display: flex;
+                    flex-direction: column;
+
+                    h4{
+                        color:white;
+                        padding-bottom: 0.8rem;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #959595;
+                        font-size: 0.7rem;
+                    }
+                }
+
+
+                .copyright{
+                    color: #959595;
+                    font-size: 0.8rem;
+                    padding-top: 2rem;
+
+                    & a{
+                        text-decoration: none;
+                        color: $header-color;
+                    }
+            
+                }
+
             }
+
+
+
         }
-
-
-        .copyright{
-            color: #959595;
-            font-size: 0.8rem;
-            padding-top: 2rem;
-
-            & a{
-                text-decoration: none;
-                color: $header-color;
-            }
-    
-        }
-
-
-
-
-
-
-
-    }
-
-    
-
 
     }
 
