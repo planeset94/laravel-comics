@@ -134,6 +134,7 @@ nav.menu .container .search input {
   display: flex;
   width: 40%;
   flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 #site_footer .top-footer .container .link-container .group {
@@ -144,7 +145,8 @@ nav.menu .container .search input {
 
 #site_footer .top-footer .container .link-container .group h4 {
   color: white;
-  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
 }
 
 #site_footer .top-footer .container .link-container .group a {
@@ -156,7 +158,6 @@ nav.menu .container .search input {
 #site_footer .top-footer .container .link-container .copyright {
   color: #959595;
   font-size: 0.8rem;
-  padding-top: 2rem;
 }
 
 #site_footer .top-footer .container .link-container .copyright a {

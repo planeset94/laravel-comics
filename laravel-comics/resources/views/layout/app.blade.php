@@ -1,3 +1,49 @@
+<?php
+//Creo una struttura dati per la nav
+$menu = [
+[
+'href' => route('characters'),
+'text' => 'characters',
+],
+[
+'href' => route('comics'),
+'text' => 'comics',
+],
+[
+'href' => route('movies'),
+'text' => 'movies',
+],
+[
+'href' => route('tv'),
+'text' => 'tv',
+],
+[
+'href' => route('games'),
+'text' => 'games',
+],
+[
+'href' => route('collectibles'),
+'text' => 'collectibles',
+],
+[
+'href' => route('videos'),
+'text' => 'videos',
+],
+[
+'href' => route('fans'),
+'text' => 'fans',
+],
+[
+'href' => route('news'),
+'text' => 'news',
+],
+[
+'href' => route('shop'),
+'text' => 'shop',
+],
+]; ?>
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -35,26 +81,12 @@
                     <img src="{{ asset('img/dc-logo.png') }}" alt="Logo DC">
                 </div>
                 <div class="pages">
-                    <a href="{{ route('characters') }}"
-                        id="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}">Characters</a>
-                    <a href="{{ route('comics') }}"
-                        id="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">Comics</a>
-                    <a href="{{ route('movies') }}"
-                        id="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}">Movies</a>
-                    <a href="{{ route('tv') }}"
-                        id="{{ Route::currentRouteName() === 'tv' ? 'active' : '' }}">Tv</a>
-                    <a href="{{ route('games') }}"
-                        id="{{ Route::currentRouteName() === 'games' ? 'active' : '' }}">Games</a>
-                    <a href="{{ route('collectibles') }}"
-                        id="{{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }}">Collectibles</a>
-                    <a href="{{ route('videos') }}"
-                        id="{{ Route::currentRouteName() === 'videos' ? 'active' : '' }}">Videos</a>
-                    <a href="{{ route('fans') }}"
-                        id="{{ Route::currentRouteName() === 'fans' ? 'active' : '' }}">Fans</a>
-                    <a href="{{ route('news') }}"
-                        id="{{ Route::currentRouteName() === 'news' ? 'active' : '' }}">News</a>
-                    <a href="{{ route('shop') }}"
-                        id="{{ Route::currentRouteName() === 'shop' ? 'active' : '' }}">Shop</a>
+                    @foreach ($menu as $item)
+                        <a href="{{ $item['href'] }}"
+                            id="{{ Route::currentRouteName() === $item['text'] ? 'active' : '' }}">{{ $item['text'] }}
+                        </a>
+                    @endforeach
+
                 </div>
                 <div class="search">
                     <input type="search" name="search" id="search" placeholder="Search ">

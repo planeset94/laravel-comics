@@ -29,7 +29,7 @@
                 display: flex;
                 width: 40%;
                 flex-wrap: wrap;
-               
+                padding-top: 2rem;
 
             
 
@@ -40,7 +40,8 @@
 
                     h4{
                         color:white;
-                        padding-bottom: 0.8rem;
+                        font-size: 0.8rem;
+                        padding-bottom: 1rem;
                     }
                     a{
                         text-decoration: none;
@@ -53,7 +54,7 @@
                 .copyright{
                     color: #959595;
                     font-size: 0.8rem;
-                    padding-top: 2rem;
+                    
 
                     & a{
                         text-decoration: none;
