@@ -68,13 +68,13 @@ $menu = [
 
 <body>
     {{-- Site Header --}}
-    @include('partials.header'))
+    @include('partials.header')
     {{-- /Site Header --}}
 
     <main id="main_content">
-        <div class="container">
-            @yield('content')
-        </div>
+
+        @yield('content')
+
     </main>
 
     {{-- SITE FOOTER --}}
