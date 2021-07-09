@@ -64,7 +64,7 @@
     </section>
 
 
-    {{-- <section class="bottom-footer">
+    <section class="bottom-footer">
         <div class="container">
             <div class="sign">
                 <h3 class="UPPER-CASE">Sign-Up Now!</h3>
@@ -80,7 +80,7 @@
 
             </div>
         </div>
-    </section> --}}
+    </section>
 
 
 </footer>

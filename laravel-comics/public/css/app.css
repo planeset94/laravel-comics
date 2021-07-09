@@ -178,62 +178,105 @@ nav.menu .container .search input {
   color: white;
 }
 
-#site_footer {
+.top-footer {
   color: white;
-}
-
-#site_footer .top-footer {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
 }
 
-#site_footer .top-footer .container {
+.top-footer .container {
   display: flex;
 }
 
-#site_footer .top-footer .container .big-logo {
+.top-footer .container .big-logo {
   width: 60%;
   height: 400px;
 }
 
-#site_footer .top-footer .container .big-logo img {
+.top-footer .container .big-logo img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#site_footer .top-footer .container .link-container {
+.top-footer .container .link-container {
   display: flex;
   width: 40%;
   flex-wrap: wrap;
   padding-top: 2rem;
 }
 
-#site_footer .top-footer .container .link-container .group {
+.top-footer .container .link-container .group {
   width: calc(100%/3 - 1rem);
   display: flex;
   flex-direction: column;
 }
 
-#site_footer .top-footer .container .link-container .group h4 {
+.top-footer .container .link-container .group h4 {
   color: white;
   font-size: 0.8rem;
   padding-bottom: 1rem;
 }
 
-#site_footer .top-footer .container .link-container .group a {
+.top-footer .container .link-container .group a {
   text-decoration: none;
   color: #959595;
   font-size: 0.7rem;
 }
 
-#site_footer .top-footer .container .link-container .copyright {
+.top-footer .container .link-container .copyright {
   color: #959595;
   font-size: 0.8rem;
 }
 
-#site_footer .top-footer .container .link-container .copyright a {
+.top-footer .container .link-container .copyright a {
   text-decoration: none;
   color: #0282F9;
+}
+
+.bottom-footer {
+  background-color: #303030;
+  color: white;
+}
+
+.bottom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 3rem;
+}
+
+.bottom-footer .container .sign {
+  border: 2px solid #0282F9;
+  padding: 1rem;
+}
+
+.bottom-footer .container .socials {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-footer .container .socials h3 {
+  font-size: 1.2rem;
+  padding-right: 1.5rem;
+  color: #0282F9;
+}
+
+.bottom-footer .container .socials span {
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #797979;
+}
+
+.bottom-footer .container .socials span i {
+  font-size: 1.5rem;
+  color: #303030;
 }
 
