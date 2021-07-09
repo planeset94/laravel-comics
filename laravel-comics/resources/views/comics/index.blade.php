@@ -7,7 +7,7 @@
     @foreach ($comics as $comic)
         <div class="comic">
             <img src="{{ $comic['thumb'] }}" alt="">
-            {{ $comic['series'] }}
+            <h6 class="UPPER-CASE"> {{ $comic['series'] }}</h6>
         </div>
     @endforeach
 
