@@ -29,45 +29,63 @@ return view('comics.show', compact('comics', 'comic'));
 
 
 Route::get('/characters', function () {
-    return view('characters');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('characters',compact('comics','menu'));
 })-> name ('characters');
 
 
 Route::get('/movies', function () {
-    return view('movies');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('movies',compact('comics','menu'));
 })-> name ('movies');
 
 
 Route::get('/tv', function () {
-    return view('tv');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('tv', compact('comics','menu'));
 })-> name ('tv');
 
 
 Route::get('/games', function () {
-    return view('games');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('games', compact('comics','menu'));
 })-> name ('games');
 
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('collectibles', compact('comics','menu'));
 })-> name ('collectibles');
 
 
 Route::get('/videos', function () {
-    return view('videos');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('videos', compact('comics','menu'));
 })-> name ('videos');
 
 
 Route::get('/fans', function () {
-    return view('fans');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('fans', compact('comics','menu'));
 })-> name ('fans');
 
 
 Route::get('/news', function () {
-    return view('news');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('news', compact('comics','menu'));
 })-> name ('news');
 
 
 Route::get('/shop', function () {
-    return view('shop');
+    $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+    return view('shop', compact('comics','menu') );
 })-> name ('shop');
