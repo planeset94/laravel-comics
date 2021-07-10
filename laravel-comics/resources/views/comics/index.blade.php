@@ -2,7 +2,7 @@
 
 {{-- Collego il file CSS specifico --}}
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/comics.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 
 
 @section('title', 'Home Page')
