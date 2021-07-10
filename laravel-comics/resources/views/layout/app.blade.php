@@ -1,49 +1,3 @@
-<?php
-//Creo una struttura dati per la nav
-$menu = [
-[
-'href' => route('characters'),
-'text' => 'characters',
-],
-[
-'href' => route('comics'),
-'text' => 'comics',
-],
-[
-'href' => route('movies'),
-'text' => 'movies',
-],
-[
-'href' => route('tv'),
-'text' => 'tv',
-],
-[
-'href' => route('games'),
-'text' => 'games',
-],
-[
-'href' => route('collectibles'),
-'text' => 'collectibles',
-],
-[
-'href' => route('videos'),
-'text' => 'videos',
-],
-[
-'href' => route('fans'),
-'text' => 'fans',
-],
-[
-'href' => route('news'),
-'text' => 'news',
-],
-[
-'href' => route('shop'),
-'text' => 'shop',
-],
-]; ?>
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -64,6 +18,9 @@ $menu = [
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @yield('js')
+    @yield('css')
+
 </head>
 
 <body>

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// COMICS 
+// COMICS ROUTES
 Route::get('/comics', function () {
 
 $comics= config ('comics.data');
@@ -26,7 +26,7 @@ Route::get('comics/{id}', function ($id) {
     $comic=$comics[$id];
 return view('comics.show', compact('comics', 'comic'));
 });
-
+// COMICS ROUTES
 
 
 Route::get('/characters', function () {

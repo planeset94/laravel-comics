@@ -11,8 +11,8 @@
                 <img src="{{ asset('img/dc-logo.png') }}" alt="Logo DC">
             </div>
             <div class="pages">
-                @foreach ($menu as $item)
-                    <a href="{{ $item['href'] }}"
+                @foreach (config('comics.menu') as $item)
+                    <a href="{{ route($item['href']) }}"
                         id="{{ Route::currentRouteName() === $item['text'] ? 'active' : '' }}">{{ $item['text'] }}
                     </a>
                 @endforeach
