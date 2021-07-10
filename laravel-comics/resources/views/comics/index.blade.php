@@ -8,8 +8,15 @@
 @section('title', 'Home Page')
 @section('content')
     <div class="container">
+
+
+        <div class="current-series">
+            <h3 class="UPPER-CASE">current Series</h3>
+        </div>
+
+
+        {{-- MOSTRO OGNI FUMETTO --}}
         <div class="card-container">
-            {{-- MOSTRO OGNI FUMETTO --}}
             @foreach ($comics as $index => $comic)
                 <div class="comic">
                     <a href="{{ route('show', ['id' => $index]) }}">

@@ -29,6 +29,15 @@
 
 #main_content {
   background-color: black;
+  position: relative;
+}
+
+#main_content .current-series {
+  position: absolute;
+  top: -4%;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: #0282F9;
 }
 
 #main_content .card-container {

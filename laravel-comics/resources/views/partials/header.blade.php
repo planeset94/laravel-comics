@@ -31,11 +31,5 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron">
-        <div class="container">
-            <div class="current-series">
-                <h3 class="UPPER-CASE">current Series</h3>
-            </div>
-        </div>
-    </div>
+    <div class="jumbotron"></div>
 </header>

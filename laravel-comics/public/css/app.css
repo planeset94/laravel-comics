@@ -103,14 +103,6 @@ nav.menu .container .search input {
   position: relative;
 }
 
-.jumbotron .current-series {
-  position: absolute;
-  bottom: -6%;
-  padding: 1rem 1.5rem;
-  color: white;
-  background-color: #0282F9;
-}
-
 .top-footer {
   color: white;
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
