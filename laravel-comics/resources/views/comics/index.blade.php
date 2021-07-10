@@ -1,5 +1,10 @@
 @extends('layout.app')
 
+{{-- Collego il file CSS specifico --}}
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/comics.css') }}">
+
+
 @section('title', 'Home Page')
 @section('content')
     <div class="container">
@@ -45,10 +50,3 @@
 
     </div>
 @endsection
-
-
-
-
-
-
-@section('footer')

@@ -247,8 +247,8 @@ return [
         'text' => 'videos',
         ],
         [
-        'href' => 'fans',
-        'text' => 'fans',
+            'text' => 'fans',
+            'href' => 'fans',
         ],
         [
         'href' => 'news',

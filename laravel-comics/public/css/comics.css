@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.UPPER-CASE {
+  text-transform: uppercase;
+}
+
+#active {
+  color: #0282F9;
+}
+
+#active::before {
+  display: inline-block;
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: #0282F9;
+  position: absolute;
+  bottom: -200%;
+}
+
+#main_content {
+  background-color: black;
+}
+
+#main_content .card-container {
+  padding: 3.5rem 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#main_content .card-container .comic {
+  width: calc(100%/6 - 2rem);
+  height: 150px;
+  margin: 0 2rem 4rem 0;
+}
+
+#main_content .card-container .comic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+#main_content .card-container .comic h6 {
+  padding-top: 0.8rem;
+  font-size: 10px;
+  color: #ffffffad;
+}
+
+#main_content .card-container .more {
+  color: white;
+  padding: 15px 60px;
+  margin: 1.5rem 0;
+  background: #0282F9;
+}
+
+#main_content .card-container .more h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_content .blue-section {
+  background-color: #0282F9;
+}
+
+#main_content .blue-section .blue-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#main_content .blue-section .blue-container .blue-card {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+#main_content .blue-section .blue-container .blue-card img {
+  height: 100%;
+}
+
+#main_content .blue-section .blue-container .blue-card h6 {
+  padding-left: 1rem;
+  color: white;
+}
+
