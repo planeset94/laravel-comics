@@ -6,20 +6,34 @@
 
 @section('title', 'Fumetto')
 @section('content')
+    {{-- BARRA BLUE --}}
+    <div class="blue-bar"></div>
+    <div class="container">
+        {{-- CARTOLINA --}}
+        <div class="card">
+            <div class="poster">
+                <img src="{{ $comic['thumb'] }}" alt="">
+                <p class="book UPPER-CASE">Comic Book</p>
+                <p class="gallery UPPER-CASE">
+                    <a href="{{ route('comics') }}">View Gallery</a>
+                </p>
+            </div>
 
-    <div class="card">
-        <div class="poster">
-            <img src="{{ $comic['thumb'] }}" alt="">
         </div>
+        {{-- /CARTOLINA --}}
+
+
+
+
+
+
+
+
+
 
 
 
     </div>
-
-
-
-
-
 @endsection
 
 

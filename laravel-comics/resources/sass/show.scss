@@ -2,3 +2,48 @@
 @import 'partials/common';
 
 
+.blue-bar{
+    background-color: $header-color;
+    padding: 2.5rem 0;
+}
+
+.card{  
+    position: absolute;
+    margin-top: -17rem;
+    .poster{
+        position: relative;
+        width: auto;
+        height: 250px;
+       img{
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+       }
+    }
+
+    p.book{
+        position: absolute;
+        top: 0;
+        color: white;
+        background-color:$azzurro;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    p.gallery a{
+        text-decoration: none;
+        color: white;
+        background-color: $azzurro;
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+
+}
