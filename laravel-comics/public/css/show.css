@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.UPPER-CASE {
+  text-transform: uppercase;
+}
+
+#active {
+  color: #0282F9;
+}
+
+#active::before {
+  display: inline-block;
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: #0282F9;
+  position: absolute;
+  bottom: -230%;
+}
+

@@ -19472,27 +19472,39 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/comics.scss":
-/*!************************************!*\
-  !*** ./resources/sass/comics.scss ***!
-  \************************************/
+/***/ "./resources/sass/index.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/index.scss ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/resources/sass/comics.scss'\n    at /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/node_modules/webpack/lib/NormalModule.js:316:20\n    at /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:77:11)");
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/show.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/show.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
 /***/ 0:
-/*!******************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/comics.scss ***!
-  \******************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/index.scss ./resources/sass/show.scss ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/resources/sass/comics.scss */"./resources/sass/comics.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/resources/sass/index.scss */"./resources/sass/index.scss");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/LARAVEL/esercitazione_2(laravel-comics)/laravel-comics/laravel-comics/resources/sass/show.scss */"./resources/sass/show.scss");
 
 
 /***/ })

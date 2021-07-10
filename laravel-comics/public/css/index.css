@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@
   height: 4px;
   background-color: #0282F9;
   position: absolute;
-  bottom: -200%;
+  bottom: -230%;
 }
 
 #main_content {

@@ -10,7 +10,9 @@
         font-size: 0.6rem;
         padding: 5px 0;
 
-
+        p{
+            font-size: 0.5rem;
+        }
         p:first-of-type{
             padding-right: 2rem;
         }
@@ -53,7 +55,7 @@ nav.menu {
                 padding: 0 0.5rem;
                 padding-top: 5px;
                 color: $main-font-color;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
                 }
             }
 
