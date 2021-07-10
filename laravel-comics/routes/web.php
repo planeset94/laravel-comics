@@ -17,14 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/comics', function () {
 $comics= config ('comics.data');
 $menu= config ('comics.menu');
-    return view('comics.index', compact('comics','menu'));
+return view('comics.index', compact('comics','menu'));
 })-> name ('comics');
 
-Route::get('comics/{id}', function ($id) {
+Route::get('comics/{id}', function ($id) { 
     $comics= config ('comics.data');
+    $menu= config ('comics.menu');
+  if(is_numeric($id) && $id>=0 && $id<count($comics)){
     $comic=$comics[$id];
-return view('comics.show', compact('comics', 'comic'));
-});
+  } else {
+    abort(404);
+}
+return view('comics.show', compact('comics', 'comic', 'menu'));
+})->name('show');
 // COMICS ROUTES
 
 

@@ -9,10 +9,12 @@
 @section('content')
     <div class="container">
         <div class="card-container">
-
-            @foreach ($comics as $comic)
+            {{-- MOSTRO OGNI FUMETTO --}}
+            @foreach ($comics as $index => $comic)
                 <div class="comic">
-                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <a href="{{ route('show', ['id' => $index]) }}">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                    </a>
                     <h6 class="UPPER-CASE"> {{ $comic['series'] }}</h6>
                 </div>
             @endforeach

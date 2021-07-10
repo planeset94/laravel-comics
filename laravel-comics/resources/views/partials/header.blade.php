@@ -18,8 +18,8 @@
                 @endforeach --}}
 
                 @foreach ($menu as $item)
-                    <a href="{{ $item['href'] }}"
-                        id="{{ Route::currentRouteName() === $item['text'] ? 'active' : '' }}">{{ $item['text'] }}
+                    <a href="{{ route($item['href']) }}"
+                        id="{{ Route::currentRouteName() === $item['href'] ? 'active' : '' }}">{{ $item['text'] }}
                     </a>
                 @endforeach
 
