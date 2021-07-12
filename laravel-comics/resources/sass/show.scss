@@ -42,8 +42,38 @@
         text-align: center;
     }
 
+}
 
 
+.section-one{
+    display: flex;
+    justify-content: space-between;
+
+    .info-card{
+        margin-right: 2rem;
+        flex-basis: 70%;
+
+        .market{
+            display: flex;
+
+            .price{
+                flex-basis: 60%;
+                justify-content: space-between;
+                display: flex;
+            }
+            .availability{
+                flex-basis: 40%;
+            }
+        }
+
+    }
+    
+    .advertisement{
+        flex-basis: 30%;
+        height: 200px;
+        border: 2px solid black;
+    
+    }
 
 
 }
